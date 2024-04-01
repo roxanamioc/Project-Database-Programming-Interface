@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="telefon"/>
+  <table-filter match-name="locatiefabrica"/>
+  <table-filter match-name="modeltelefon"/>
+  <table-filter match-name="companie"/>
+</hibernate-reverse-engineering>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<hibernate-mapping>
+	<class name="pojo.LocatieFabrica" table="locatiefabrica" catalog="telefon"
+		optimistic-lock="version">
+		<id name="idLocatieFabrica" type="java.lang.Integer">
+			<column name="idLocatieFabrica" />
+			<generator class="identity" />
+		</id>
+		<property name="oras" type="string">
+			<column name="Oras" length="45" />
+		</property>
+		<property name="tara" type="string">
+			<column name="Tara" length="45" />
+		</property>
+		<set name="consultaties" table="companie" inverse="true"
+			lazy="true" fetch="select">
+			<key>
+				<column name="idLocatieFabrica" />
+			</key>
+			<one-to-many class="pojo.Companie" />
+		</set>
+	</class>
+</hibernate-mapping>

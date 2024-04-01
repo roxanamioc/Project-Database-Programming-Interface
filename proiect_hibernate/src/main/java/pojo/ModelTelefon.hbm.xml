@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<hibernate-mapping>
+	<class name="pojo.ModelTelefon" table="modeltelefon" catalog="telefon"
+		optimistic-lock="version">
+		<id name="idModelTelefon" type="java.lang.Integer">
+			<column name="idModelTelefon" />
+			<generator class="identity" />
+		</id>
+		<property name="nume" type="string">
+			<column name="Nume" length="45" />
+		</property>
+		<property name="memorie_Interna" type="float">
+			<column name="Memorie_Interna" length="45" />
+		</property>
+		<property name="memorie_RAM" type="float">
+			<column name="Memorie_RAM" length="45" />
+		</property>
+		<property name="dimensiune_Ecran" type="float">
+			<column name="Dimensiune_Ecran" length="45" />
+		</property>
+		<property name="an_Aparitie" type="int">
+			<column name="An_Aparitie" length="45" />
+		</property>
+		<set name="consultaties" table="companie" inverse="true"
+			lazy="true" fetch="select">
+			<key>
+				<column name="idModelTelefon" />
+			</key>
+			<one-to-many class="pojo.Companie" />
+		</set>
+	</class>
+</hibernate-mapping>

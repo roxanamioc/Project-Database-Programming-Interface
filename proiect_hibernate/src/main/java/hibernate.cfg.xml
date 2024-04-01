@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/telefon</property>
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">Roxifoxi02#</property>
+    <mapping resource="pojo/Companie.hbm.xml"/>
+    <mapping resource="pojo/ModelTelefon.hbm.xml"/>
+    <mapping resource="pojo/LocatieFabrica.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

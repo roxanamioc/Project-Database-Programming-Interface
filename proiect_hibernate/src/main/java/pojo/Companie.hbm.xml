@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<hibernate-mapping>
+	<class name="pojo.Companie" table="companie"
+		catalog="telefon" optimistic-lock="version">
+		<id name="idCompanie" type="java.lang.Integer">
+			<column name="idCompanie" />
+			<generator class="identity" />
+		</id>
+		<many-to-one name="locatieFabrica" class="pojo.LocatieFabrica"
+			fetch="select">
+			<column name="idLocatieFabrica" />
+		</many-to-one>
+		<many-to-one name="modelTelefon" class="pojo.ModelTelefon"
+			fetch="select">
+			<column name="idModelTelefon" />
+		</many-to-one>
+		<property name="nume" type="string">
+			<column name="Nume" length="10" />
+		</property>
+		<property name="fondator" type="string">
+			<column name="Fondator" length="45" />
+		</property>
+		<property name="an_Infiintare" type="int">
+			<column name="An_Infiintare" length="45" />
+		</property>
+	</class>
+</hibernate-mapping>
