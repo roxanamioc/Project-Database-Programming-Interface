@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1</title>
+    <style>
+        body {
+            font-family: 'Caveat', cursive;
+            background-image: url('https://i.pinimg.com/736x/56/2b/38/562b386c33b34ebeceea16b1fdc3f183.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            
+            color: #FFFF;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        section {
+            margin: 10px 0;
+            text-align: center;
+        	font-size: 18px;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        h2 {
+            color: #FFFF;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+        
+
+        a {
+            text-decoration: none;
+            color: #FFFF;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #CC66FF;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 5px 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>⭐Main Page⭐</h1>
+    </header>
+    <section style="position: relative; text-align: center;">
+        <h2>~ Vizualizări ~ Adăugări ~ Ștergeri ~</h2>
+        <div style="position: relative; display: inline-block;">
+        	<img src="https://i.pinimg.com/736x/40/5d/a3/405da36bccc947852cd917aea031627d.jpg" alt="Model Telefon" style="max-width: 20%; height: auto;">
+        	<h2 style="position: absolute; top: 15%; left: 62%; transform: translate(-50%, -50%); color: #333333; font-size: 20px;"><p><a href="tabela_Model_Telefon.jsp"><strong>Model Telefon</strong></a></p></h2>
+   	 	</div>
+   	 	<div style="position: relative; display: inline-block;">
+        	<img src="https://i.pinimg.com/736x/ba/39/84/ba3984e1ed191185f177140b748a9d05.jpg" alt="Locatie Fabrica" style="max-width: 20%; height: auto;">
+        	<h2 style="position: absolute; top: 7%; left: 29%; transform: translate(-50%, -50%); color: #333333; font-size: 20px;"><p><a href="tabela_Locatie_Fabrica.jsp"><strong>Locatie Fabrica</strong></a></p></h2>
+    	</div>
+   	 	<div style="position: relative; display: inline-block;">
+        	<img src="https://i.pinimg.com/736x/e2/d5/b6/e2d5b66d936907ac98f43b1814af514b.jpg" alt="Companie" style="max-width: 20%; height: auto;">
+        	<h2 style="position: absolute; top: 93%; left: 50%; transform: translate(-50%, -50%); color: #333333; font-size: 20px;"><p><a href="tabela_Companie.jsp"><strong>Companie</strong></a></p></h2>
+    	</div>
+    </section>
+    <hr>
+    <section>
+        <ul>
+            <li><a href="modifica_Model_Telefon.jsp"><strong>~Modifică Model Telefon~</strong></a></li>
+        </ul>
+        <ul>
+            <li><a href="modifica_Locatie_Fabrica.jsp"><strong>~Modifică Locatie Fabrica~</strong></a></li>
+        </ul>
+        <ul>
+            <li><a href="modifica_Companie.jsp"><strong>~Modifică Companie~</strong></a></li>
+        </ul>
+    </section>
+    <hr>
+</body>
+
+</html>
